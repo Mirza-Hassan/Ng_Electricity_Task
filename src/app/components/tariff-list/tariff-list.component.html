@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <h2>Available Tariffs</h2>
+    <button class="btn btn-primary" (click)="navigateToCompare()">Go to Comparison List</button>
+  </div>
+  <div *ngIf="showSuccessMessage" class="alert alert-success mt-3" role="alert">
+    Tariff added to compare list successfully!
+  </div>
+  <form [formGroup]="sortForm" class="sort-container mt-3">
+    <label for="sort">Sort by Price:</label>
+    <select id="sort" formControlName="sort">
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+  </form>
+  <div *ngFor="let tariff of tariffs" class="tariff-card mt-3">
+    <h3>{{tariff.name}}</h3>
+    <p>{{tariff.description}}</p>
+    <p><strong>Price: </strong>{{tariff.price}}</p>
+    <p><strong>Supplier: </strong>{{tariff.supplier}}</p>
+    <button class="btn btn-primary" (click)="addToCompare(tariff)">Add to Compare</button>
+  </div>
+</div>
