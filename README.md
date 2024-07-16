@@ -23,7 +23,7 @@ The web application allows users to view, sort, and compare electricity tariffs.
 - Angular, Typescript, Redux, SCSS, Docker
 
 # Folder Structure
-![fs](https://github.com/user-attachments/assets/03f16077-8fcd-4515-8f73-c7275ee06c08)
+![fs](https://github.com/user-attachments/assets/8b7bed43-ba89-4013-8c8a-9d08c570add4)
 
 # Setup Instructions
 
